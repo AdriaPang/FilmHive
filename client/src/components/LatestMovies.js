@@ -26,6 +26,7 @@ const LatestMovies = () => {
 
   return (
     <div style={{
+      width: '100%',
       marginBottom: 10,
       border: '2px solid #ccc',
       borderRadius: 5,
@@ -36,7 +37,7 @@ const LatestMovies = () => {
       backgroundColor: 'rgba(0, 0, 0, 0.2)',
     }}>
       {/* <h2>Latest Movies</h2> */}
-      <Typography.Title level={2}>Latest movies</Typography.Title>
+      <Typography.Title level={3}>Latest movies</Typography.Title>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {latestMovies.slice(0, 14).map((item) => (
           <Card
